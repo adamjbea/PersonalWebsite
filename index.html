@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Adam Bea</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton|Audiowide|Poppins">
+  <link rel="stylesheet" href="site.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ <script>
+     $(function() {
+  $('a[href*="#"]:not([href="#"]):not([data-toggle]):not([data-slide])').click(function() {
+    if (((location.pathname.replace(/^\//, '')) == (this.pathname.replace(/^\//, ''))) && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        if (target.length) {
+            $('html, body').animate({
+                scrollTop: target.offset().top
+            }, 1000);
+            return false;
+        }
+    }
+
+});
+     });
+    </script>
+</head>
+<body>
+    <!-- Opner Jumbotron Container -->
+    
+        <div id="opener" class="jumbotron first">
+           
+            <div class="container-fluid text-center">
+                <h2>Looking for creative <span id="highlightblue">design</span> and <span id="highlightblue">efficiency</span>?</h2>
+                <h2>That's what I strive for. </h2>
+                <h2>I'm <span id="highlightblue">Adam Bea</span>.</h2>
+                <h3 id="padding">Compiling resume<span class="ellipsis-anim"><span>.</span><span>.</span><span>.</span></span></h3>
+                <div class="page-scroll text-center">
+                    <a href="#navbar" id="enter" class="btn btn-circle">
+                        <i class="fa fa-angle-down fa-2x animated"></i>
+                    </a>
+                
+                </div>      
+            </div>
+        
+        </div>
+     
+    
+        <nav id = "navbar" class="second navbar navbar-expand-lg navbar-dark sticky-top">
+            <a class="navbar-brand" href="#">
+                <img src="https://i.imgur.com/JF6Ajyl.png" alt="logo" style="width:40px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+                <ul class="navbar-nav  mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
+  Resume
+</button>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#aboutme">About</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#skillbook">Skills</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                     <li class="nav-item active">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    
+    <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Resume</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+          <img src="https://i.imgur.com/2JzWGFt.jpg" alt="whatever" class="img-fluid">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+        <div id="aboutme" class="container-fluid content alpha">
+            <div class="jumbotron text-center jumboheader">
+            <h1 style="font-weight: bold"> About </h1>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md">
+                        <h5 class="text-center">I am currently a Computer Science student at <span id="highlightblue">San Francisco State University</span> 
+                            by day and an aspiring <span id="highlightblue">full-stack developer</span> by night. I believe in making the Internet a 
+                            beautiful and powerful place. I value creativity as well as efficiency when it comes to design and development. 
+                            <span style="font-weight: bold">Lets do something great together.</span> </h5>
+                    </div>
+                    <div class="col-md">
+                        <img class ="circlepic img-fluid" src="https://i.imgur.com/QssLRaj.jpg">
+                    </div>
+                    <div class="col-md">
+                        <div class="row">
+                            <div class="col col-md-12 text-center circle">
+                                <h5><span id="highlightblue">Who:</span></h5> Adam Bea 
+                            </div>
+                        
+                        
+                            <div class="col col-md-12 text-center circle">
+                                <h5><span id="highlightblue">What:</span></h5> Full-Stack Developer 
+                            </div>
+                       
+                            <div class="col col-md-12 text-center circle">
+                                <h5><span id="highlightblue">Where:</span></h5> San Francisco Bay Area
+                            </div>
+                        </div>
+                
+                    </div>
+                </div>
+            </div>
+                <div class="container-fluid">
+                <div class="row">
+                    <div class="col-4 text-center">
+                        <a href="https://www.facebook.com/adam.bea" class="fab fa-facebook"></a>
+                    </div>
+                    <div class="col-4 text-center">
+                        <a href="https://www.instagram.com/mild.child_/" class="fab fa-instagram"></a>
+                    </div>
+                    <div class="col-4 text-center">
+                        <a href="https://twitter.com/spctcl_" class="fab fa-twitter"></a>
+                    </div>
+                </div>
+             </div>
+        </div>
+        
+
+   <div id="skillbook" class="container-fluid content beta">
+             <div class="jumbotron text-center jumboheader">
+                <h1 style="font-weight: bold"> Skills </h1>
+            </div>
+       <div class="container-fluid">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="home-tab" data-toggle="pill" href="#home" role="tab" aria-controls="home" aria-selected="true">Programming</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="profile-tab" data-toggle="pill" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Web</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="messages-tab" data-toggle="pill" href="#messages" role="tab" aria-controls="messages" aria-selected="false">Personal</a>
+  </li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+      <div class="container-fluid">
+          <h5 style="padding-top:0;">Java</h5>
+          <div class="progress" style="height: 5vh;">
+               <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">100%</div>
+          </div>
+          <h5>C++</h5>
+          <div class="progress" style="height: 5vh;">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 92%" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">92%</div>
+          </div>
+          <h5>Python</h5>
+          <div class="progress" style="height: 5vh;">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" style="width: 83%" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100">83%</div>
+          </div>
+          <h5>C#</h5>
+          <div class="progress" style="height: 5vh;">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 64%" aria-valuenow="64" aria-valuemin="0" aria-valuemax="100">64%</div>
+          </div>
+          <h5 class="text-center" style="margin-top:5%"> These are my skills related to software engineering and application. Emphasis on game development and design.</h5>
+  </div>
+  </div>
+  <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+     <div class="container-fluid">
+          <h5 style="padding-top:0;">HTML (with Bootstrap)</h5>
+          <div class="progress" style="height: 5vh;">
+               <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">100%</div>
+          </div>
+          <h5>CSS</h5>
+          <div class="progress" style="height: 5vh;">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 100%" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">100%</div>
+          </div>
+          <h5>PHP</h5>
+          <div class="progress" style="height: 5vh;">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" role="progressbar" style="width: 73%" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100">73%</div>
+          </div>
+          <h5>Javascript/JQuery</h5>
+          <div class="progress" style="height: 5vh;">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" style="width: 84%" aria-valuenow="64" aria-valuemin="0" aria-valuemax="100">84%</div>
+          </div>
+          <h5 class="text-center" style="margin-top:5%"> These are my skills related to web-based development and full-stack application. Emphasis efficiency and design.</h5>
+  </div>
+  </div>
+  <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+     <div class="container-fluid">
+          <h5 style="padding-top:0;">Efficiency</h5>
+          <div class="progress" style="height: 5vh;">
+               <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">100%</div>
+          </div>
+          <h5>Organization</h5>
+          <div class="progress" style="height: 5vh;">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" role="progressbar" style="width: 100%" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">100%</div>
+          </div>
+          <h5>Creativity</h5>
+          <div class="progress" style="height: 5vh;">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width: 100%" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100">100%</div>
+          </div>
+          <h5>Motivation</h5>
+          <div class="progress" style="height: 5vh;">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" style="width: 100%;" aria-valuenow="64" aria-valuemin="0" aria-valuemax="100">100%</div>
+          </div>
+          <h5 class="text-center" style="margin-top:5%"> These are my skills related to being a person rather than programmer. Emphasis on getting the job done, creatively and efficiently.</h5>
+  </div>
+  
+</div>
+       </div>
+   </div>
+   </div>
+    <script>$(".bar").each(function(){
+  $(this).find(".bar-inner").animate({
+    width: $(this).attr("data-width")
+  },2000)
+});</script>
+
+<div id="education" class="container-fluid content alpha">
+            <div class="jumbotron text-center jumboheader">
+            <h1 style="font-weight: bold"> Education </h1>
+            </div>
+    <div class="container-fluid">
+    <div class="row">
+        <div class="col-md">
+        <div class="card">
+  <img class="card-img-top serra" src="https://pbs.twimg.com/profile_images/760994510239178752/VyJWAoKa_400x400.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Junipero Serrra High School</h5>
+    <p class="card-text">(2006-2010)</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Bank of America Computer Science Award</li>
+    <li class="list-group-item">AP Scholar</li>
+    <li class="list-group-item">Related Courses: AP Computer Science, General Education</li>
+  </ul>
+</div>
+        </div>
+        <div class="col-md">
+        <div class="card">
+  <img class="card-img-top csm" src="https://canadacollege.edu/about/images/smcccd-logo.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">San Mateo Community College District</h5>
+    <p class="card-text">(2014-2017)</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Deans List (Fall 2016)</li>
+    <li class="list-group-item">Deans List (Spring 2017)</li>
+    <li class="list-group-item">Related Classes: Data Structures, Object Oriented Programming, Computer Architecture</li>
+  </ul>
+</div>
+        </div>
+        <div class="col-md">
+        <div class="card">
+  <img class="card-img-top sfsu" src="https://news.sfsu.edu/sites/default/files/u34/gator_web.png" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">San Francisco State University</h5>
+    <p class="card-text">(2018-TBD)</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">First Semester Almost Complete</li>
+    <li class="list-group-item">New Web Development Skills Acquired</li>
+    <li class="list-group-item">Related Classes: Programming Methodology, Software Development, Web Development</li>
+  </ul>
+</div>
+    </div>
+    </div>
+    </div>
+</div>
+    
+    <div id="three" class="parallax img-fluid">
+        <div class="container">
+            <div class="jumbotron text-center">
+                <h1 id ="opaque" class="jumboheader"> //Projects </h1>
+            </div>
+        </div>
+    </div>
+      
+    <div id="contact" class="container-fluid content contact">
+        <div class="jumbotron text-center jumboheader">
+                <h1 style="font-weight: bold"> Contact </h1>
+            </div>
+        <div class="row">
+            <div class="col-md text-center">
+                <a href="https://www.linkedin.com/in/adamjbea" class="fab fa-linkedin-in"></a>
+                <h5>www.linkedin.com/in/adamjbea</h5>
+            </div>
+             <div class="col-md text-center">
+                 <a class="fas fa-phone"></a>
+                 <h5> 415-637-6976 </h5>
+            </div>
+                <div class="col-md text-center">
+                    <a class="fas fa-envelope"></a>
+                    <h5> adamjbea@gmail.com </h5>
+                </div>
+            
+            </div>
+    </div>
+        <div class="container-fluid text-center">
+            <h5 style="font-style: italic;"> Thank you for taking the time to look at my website and getting to know me.  I hope to hear from you soon! </h5>
+        </div>
+        
+        <div id="one" class="parallax img-fluid">
+        <div class="container">
+            <div class="jumbotron text-center">
+                <h1 id ="opaque" class="jumboheader"> //Projects </h1>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
+
