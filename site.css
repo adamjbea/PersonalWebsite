@@ -9,15 +9,21 @@ body{
     
       background-color: transparent;
       color: #F4F4EF;
+      margin: 0;
        
   }
   
   
-.navbar{
-    
-      background-color: #0B0C14;
-      
+  .navbar{
+      background-color: transparent;
   }
+  
+ .navbar-light .nav-item.active .nav-link,
+.navbar-light .nav-item:focus .nav-link,
+.navbar-light .nav-item:hover .nav-link {
+        color: #2196F3;
+}
+  
   
 .jumboheader{
     
@@ -25,11 +31,15 @@ body{
       
   }
   
+  .splash{
+      text-align: center;
+      padding-top: 50vh;
+  }
+  
 .first{
       
-      background-image: url("https://i.imgur.com/dx1yTuq.jpg");
-      background-size: cover;
-      mix-blend-mode: difference;
+     
+      
       /*background-color: #20232A;*/
       margin: 0;
       padding-top: 15%;
@@ -37,7 +47,8 @@ body{
       display: flex;
       height: 100vh;
       border-radius: 0;
-      
+      margin-top:0;
+      text-align: center
   }
   
   #highlightblue{
@@ -118,22 +129,25 @@ body{
 .parallax{ 
 
     /* Full height */
-    height: 10%; 
+    height: 100vh; 
     margin: 0;
-
+mix-blend-mode: difference;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
+    text-align: center;
+    padding-top: 35vh;
+    color: gainsboro;
     
   }
   
 #one.parallax{
       
-      background-image: url("https://i.imgur.com/dlC9mTk.png");
-      
+      background-image: url("https://i.imgur.com/dx1yTuq.jpg");
+      text-align: center;
   }
   
 #two.parallax{
@@ -455,5 +469,21 @@ body{
 }
 .fa-twitter:hover{
     color: white;
+}
+
+.preloadimg{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.fixed-top.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+}
+
+.fixed-top.scrolled .nav-item {
+  color:#555;
 }
 

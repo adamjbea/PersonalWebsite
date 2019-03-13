@@ -12,6 +12,8 @@
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+ 
  <script>
      $(function() {
   $('a[href*="#"]:not([href="#"]):not([data-toggle]):not([data-slide])').click(function() {
@@ -29,30 +31,23 @@
 });
      });
     </script>
+    <script>
+        $(function () {
+  $(document).scroll(function () {
+    var $nav = $(".fixed-top");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  });
+});
+    </script>
+
+
 </head>
 <body>
-
+    
+    <div id='loading_wrap' style='position:fixed; height:100%; width:100%; overflow:hidden; top:0; left:0;'><img class='preloadimg' src="images/Preloader_1.gif"></div>
     <!-- Opner Jumbotron Container -->
     
-        <div id="opener" class="jumbotron first">
-           
-            <div class="container-fluid text-center">
-                <h2>Looking for creative <span id="highlightblue">design</span> and <span id="highlightblue">efficiency</span>?</h2>
-                <h2>That's what I strive for. </h2>
-                <h2>I'm <span id="highlightblue">Adam Bea</span>.</h2>
-                <h3 id="padding">Compiling resume<span class="ellipsis-anim"><span>.</span><span>.</span><span>.</span></span></h3>
-                <div class="page-scroll text-center">
-                    <a href="#navbar" id="enter" class="btn btn-circle">
-                        <i class="fa fa-angle-down fa-2x animated"></i>
-                    </a>
-                
-                </div>      
-            </div>
-        
-        </div>
-     
-    
-               <nav id = "navbar" class="second navbar navbar-expand-lg navbar-dark sticky-top">
+    <nav id = "navbar" class="navbar navbar-light navbar-expand-lg fixed-top">
             <a class="navbar-brand" href="#">
                 <img src="https://i.imgur.com/JF6Ajyl.png" alt="logo" style="width:40px;">
             </a>
@@ -82,6 +77,26 @@
                 </ul>
             </div>
         </nav>
+    
+    <div id="one" class="parallax img-fluid">
+           
+            <div class="container-fluid text-center splash">
+                <h2>Looking for creative <span id="highlightblue">design</span> and <span id="highlightblue">efficiency</span>?</h2>
+                <h2>That's what I strive for. </h2>
+                <h2>I'm <span id="highlightblue">Adam Bea</span>.</h2>
+                <h3 id="padding">Compiling resume<span class="ellipsis-anim"><span>.</span><span>.</span><span>.</span></span></h3>
+                <div class="page-scroll text-center">
+                    <a href="#aboutme" id="enter" class="btn btn-circle">
+                        <i class="fa fa-angle-down fa-2x animated"></i>
+                    </a>
+                
+                </div>      
+            </div>
+        
+        </div>
+     
+    
+             
     
     
     <!-- Modal -->
@@ -298,14 +313,6 @@
     </div>
     </div>
 </div>
-    
-    <div id="three" class="parallax img-fluid">
-        <div class="container">
-            <div class="jumbotron text-center">
-                <h1 id ="opaque" class="jumboheader"> //Projects </h1>
-            </div>
-        </div>
-    </div>
       
     <div id="contact" class="container-fluid content contact">
         <div class="jumbotron text-center jumboheader">
@@ -338,7 +345,7 @@
             </div>
         </div>
     </div>
-    
+ <script type="text/javascript">$('#loading_wrap').remove();</script>
 </body>
 </html>
 
