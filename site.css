@@ -1,7 +1,7 @@
 body{
     
     font-family: Poppins;
-    background-color: #F4F4EF;
+    
     color: #20232A;
 }
 
@@ -27,7 +27,7 @@ body{
   
 .jumboheader{
     
-      padding: 5%; 
+      padding: 5%;
       
   }
   
@@ -107,12 +107,14 @@ body{
   .content {
       padding-left: 10%;
       padding-right: 10%;
-      background-color: #E8E8E8;
+      
+      margin-top: 0;
   }
   
 
  .content .jumbotron{
-     border-bottom: solid #58A3D0 5px;   
+     border-bottom: solid #58A3D0 5px;  
+     padding: 5%;
  }
  
   .content h1{
@@ -120,12 +122,7 @@ body{
       color: #58A3D0;
       
   }
- .alpha{
-  background-color: #E8E8E8;
-}
- .beta{
-    background-color: whitesmoke;
-}
+
 .parallax{ 
 
     /* Full height */
@@ -312,6 +309,7 @@ mix-blend-mode: difference;
   padding: 7%;
   color: white;
   border-radius: 15px;
+  background: #db3a34;
 }
 
 #addresscard {
@@ -319,15 +317,6 @@ mix-blend-mode: difference;
   padding: 7%;
   color: white;
   border-radius: 15px;
-}
-
-.fa-github {
-  background: black;
-
-}
-
-.fa-address-card{
-    background: black;
 }
 .skills {
   text-align: right;
@@ -411,9 +400,9 @@ mix-blend-mode: difference;
 }
 
 #contact {
-    background-color: #20232A;
     color: #F4F4EF;
-    padding-left: 27%;
+    padding-left: 14%;
+    padding-top: 5%;
 }
 
 #contact .jumbotron{
@@ -428,10 +417,7 @@ mix-blend-mode: difference;
     color: white;
     padding: 10%;
     border-radius: 15%;
-}
-.fa-linkedin-in {
-  background: black;
-
+    background: #db3a34;
 }
 
 .fa-phone {
@@ -489,6 +475,11 @@ mix-blend-mode: difference;
 }
 
 #form{
+    text-align: center;
+    margin: 0 auto;
+}
+
+#main{
     text-align: center;
     margin: 0 auto;
 }
